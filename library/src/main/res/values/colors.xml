@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color to be set for debug purposes-->
+    <color name="frog_green">#66bd06</color>
+    <color name="blue">#837BF2</color>
+    <color name="transparent">@android:color/transparent</color>
+</resources>
