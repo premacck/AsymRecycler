@@ -3,14 +3,15 @@ package com.prembros.asymrecycler.lib.widget
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.prembros.asymrecycler.lib.base.*
+import com.prembros.asymrecycler.lib.base.AsymBaseAdapter
+import com.prembros.asymrecycler.lib.base.AsymItem
 import com.prembros.asymrecycler.lib.impl.AdapterImpl
 import com.prembros.asymrecycler.lib.impl.AdapterImpl.ViewHolder
 
 class AsymRecyclerAdapter<T : RecyclerView.ViewHolder>(
     context: Context,
     private val recyclerView: AsymRecycler,
-    private val wrappedAdapter: AsymRecyclerAdapterWrapper<T>
+    private val wrappedAdapter: WrappedAsymRecyclerAdapter<T>
 ) : RecyclerView.Adapter<ViewHolder>(), AsymBaseAdapter<T> {
 
     private val adapterImpl: AdapterImpl<T> = AdapterImpl(context, this, recyclerView)
@@ -26,15 +27,9 @@ class AsymRecyclerAdapter<T : RecyclerView.ViewHolder>(
         })
     }
 
-    fun withLongClick(): AsymRecyclerAdapter<T> {
-        adapterImpl.isLongClickEnabled = true
-        return this
-    }
+    fun withLongClick(): AsymRecyclerAdapter<T> = apply { adapterImpl.isLongClickEnabled = true }
 
-    fun withPopupClick(): AsymRecyclerAdapter<T> {
-        adapterImpl.isPopupClickEnabled = true
-        return this
-    }
+    fun withPopupClick(): AsymRecyclerAdapter<T> = apply { adapterImpl.isPopupClickEnabled = true }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = adapterImpl.onCreateViewHolder()
 
@@ -47,9 +42,9 @@ class AsymRecyclerAdapter<T : RecyclerView.ViewHolder>(
 
     override fun getItem(position: Int): AsymItem = wrappedAdapter.getItem(position)
 
-    override fun onCreateAsymmetricViewHolder(position: Int, parent: ViewGroup, viewType: Int): AsymViewHolder<T> = AsymViewHolder(wrappedAdapter.onCreateViewHolder(parent, viewType))
+    override fun onCreateAsymViewHolder(position: Int, parent: ViewGroup, viewType: Int): AsymViewHolder<T> = AsymViewHolder(wrappedAdapter.onCreateViewHolder(parent, viewType))
 
-    override fun onBindAsymmetricViewHolder(holder: AsymViewHolder<T>, parent: ViewGroup, position: Int) = wrappedAdapter.onBindViewHolder(holder.wrappedViewHolder!!, position)
+    override fun onBindAsymViewHolder(holder: AsymViewHolder<T>, parent: ViewGroup, position: Int) = wrappedAdapter.onBindViewHolder(holder.wrappedViewHolder!!, position)
 
     override fun getItemViewType(actualIndex: Int): Int = wrappedAdapter.getItemViewType(actualIndex)
 

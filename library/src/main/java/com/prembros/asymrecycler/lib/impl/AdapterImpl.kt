@@ -125,9 +125,9 @@ class AdapterImpl<T : RecyclerView.ViewHolder>(
                 }
                 var viewHolder = pool.get()
                 if (viewHolder == null) {
-                    viewHolder = asymAdapter.onCreateAsymmetricViewHolder(actualIndex, parent, viewType)
+                    viewHolder = asymAdapter.onCreateAsymViewHolder(actualIndex, parent, viewType)
                 }
-                asymAdapter.onBindAsymmetricViewHolder(viewHolder, parent, actualIndex)
+                asymAdapter.onBindAsymViewHolder(viewHolder, parent, actualIndex)
                 val view = viewHolder.itemView
                 view.tag = ViewState(viewType, currentItem, viewHolder)
                 view.setOnClickListener(this)

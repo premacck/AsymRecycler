@@ -14,7 +14,7 @@ interface AsymBaseAdapter<T : ViewHolder> {
 
     fun getItemViewType(actualIndex: Int): Int
 
-    fun onCreateAsymmetricViewHolder(position: Int, parent: ViewGroup, viewType: Int): AsymViewHolder<T>
+    fun onCreateAsymViewHolder(position: Int, parent: ViewGroup, viewType: Int): AsymViewHolder<T>
 
-    fun onBindAsymmetricViewHolder(holder: AsymViewHolder<T>, parent: ViewGroup, position: Int)
+    fun onBindAsymViewHolder(holder: AsymViewHolder<T>, parent: ViewGroup, position: Int)
 }
