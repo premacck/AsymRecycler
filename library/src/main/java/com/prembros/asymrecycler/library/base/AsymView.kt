@@ -1,4 +1,4 @@
-package com.prembros.asymrecycler.lib.base
+package com.prembros.asymrecycler.library.base
 
 import android.view.View
 

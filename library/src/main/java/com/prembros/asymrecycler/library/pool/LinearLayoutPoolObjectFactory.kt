@@ -1,4 +1,4 @@
-package com.prembros.asymrecycler.lib.pool
+package com.prembros.asymrecycler.library.pool
 
 import android.content.Context
 import android.widget.LinearLayout

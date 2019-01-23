@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.prembros.asymrecycler.lib.util
+package com.prembros.asymrecycler.library.util
 
 import android.content.Context
 import android.util.DisplayMetrics

@@ -1,7 +1,7 @@
-package com.prembros.asymrecycler.lib.widget
+package com.prembros.asymrecycler.library.widget
 
 import androidx.recyclerview.widget.RecyclerView
-import com.prembros.asymrecycler.lib.base.AsymItem
+import com.prembros.asymrecycler.library.base.AsymItem
 
 abstract class WrappedAsymRecyclerAdapter<VH : RecyclerView.ViewHolder> : RecyclerView.Adapter<VH>() {
     abstract fun getItem(position: Int): AsymItem

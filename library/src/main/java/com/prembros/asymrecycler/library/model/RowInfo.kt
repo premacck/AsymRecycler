@@ -1,4 +1,4 @@
-package com.prembros.asymrecycler.lib.model
+package com.prembros.asymrecycler.library.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.*

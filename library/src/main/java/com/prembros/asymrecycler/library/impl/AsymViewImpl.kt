@@ -1,9 +1,9 @@
-package com.prembros.asymrecycler.lib.impl
+package com.prembros.asymrecycler.library.impl
 
 import android.content.Context
 import android.os.*
 import android.view.View
-import com.prembros.asymrecycler.lib.util.getPx
+import com.prembros.asymrecycler.library.util.getPx
 
 @Suppress("MemberVisibilityCanBePrivate")
 open class AsymViewImpl(context: Context) {

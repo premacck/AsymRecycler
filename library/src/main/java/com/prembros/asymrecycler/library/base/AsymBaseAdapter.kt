@@ -1,8 +1,8 @@
-package com.prembros.asymrecycler.lib.base
+package com.prembros.asymrecycler.library.base
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.prembros.asymrecycler.lib.widget.AsymViewHolder
+import com.prembros.asymrecycler.library.widget.AsymViewHolder
 
 interface AsymBaseAdapter<T : ViewHolder> {
 

@@ -1,12 +1,12 @@
-package com.prembros.asymrecycler.lib.widget
+package com.prembros.asymrecycler.library.widget
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.prembros.asymrecycler.lib.base.AsymBaseAdapter
-import com.prembros.asymrecycler.lib.base.AsymItem
-import com.prembros.asymrecycler.lib.impl.AdapterImpl
-import com.prembros.asymrecycler.lib.impl.AdapterImpl.ViewHolder
+import com.prembros.asymrecycler.library.base.AsymBaseAdapter
+import com.prembros.asymrecycler.library.base.AsymItem
+import com.prembros.asymrecycler.library.impl.AdapterImpl
+import com.prembros.asymrecycler.library.impl.AdapterImpl.ViewHolder
 
 class AsymRecyclerAdapter<T : RecyclerView.ViewHolder>(
     context: Context,

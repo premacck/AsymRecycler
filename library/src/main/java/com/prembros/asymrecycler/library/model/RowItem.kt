@@ -1,7 +1,7 @@
-package com.prembros.asymrecycler.lib.model
+package com.prembros.asymrecycler.library.model
 
 import android.os.Parcelable
-import com.prembros.asymrecycler.lib.base.AsymItem
+import com.prembros.asymrecycler.library.base.AsymItem
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

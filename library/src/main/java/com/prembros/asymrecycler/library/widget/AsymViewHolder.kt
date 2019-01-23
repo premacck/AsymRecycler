@@ -1,4 +1,4 @@
-package com.prembros.asymrecycler.lib.widget
+package com.prembros.asymrecycler.library.widget
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 

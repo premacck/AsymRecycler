@@ -1,11 +1,11 @@
-package com.prembros.asymrecycler.lib.widget
+package com.prembros.asymrecycler.library.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.*
 import androidx.recyclerview.widget.*
-import com.prembros.asymrecycler.lib.base.*
-import com.prembros.asymrecycler.lib.impl.AsymViewImpl
+import com.prembros.asymrecycler.library.base.*
+import com.prembros.asymrecycler.library.impl.AsymViewImpl
 
 class AsymRecycler(context: Context, attrs: AttributeSet) : RecyclerView(context, attrs, 0), AsymView {
 

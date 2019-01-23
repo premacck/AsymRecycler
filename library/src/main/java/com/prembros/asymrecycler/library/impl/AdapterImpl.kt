@@ -1,4 +1,4 @@
-package com.prembros.asymrecycler.lib.impl
+package com.prembros.asymrecycler.library.impl
 
 import android.content.Context
 import android.database.CursorIndexOutOfBoundsException
@@ -12,14 +12,14 @@ import android.widget.LinearLayout
 import androidx.collection.ArrayMap
 import androidx.core.util.forEach
 import androidx.recyclerview.widget.RecyclerView
-import com.prembros.asymrecycler.lib.R
-import com.prembros.asymrecycler.lib.base.*
-import com.prembros.asymrecycler.lib.model.*
-import com.prembros.asymrecycler.lib.pool.*
-import com.prembros.asymrecycler.lib.util.findColor
-import com.prembros.asymrecycler.lib.util.getPx
-import com.prembros.asymrecycler.lib.util.getScreenWidth
-import com.prembros.asymrecycler.lib.widget.AsymViewHolder
+import com.prembros.asymrecycler.library.R
+import com.prembros.asymrecycler.library.base.*
+import com.prembros.asymrecycler.library.model.*
+import com.prembros.asymrecycler.library.pool.*
+import com.prembros.asymrecycler.library.util.findColor
+import com.prembros.asymrecycler.library.util.getPx
+import com.prembros.asymrecycler.library.util.getScreenWidth
+import com.prembros.asymrecycler.library.widget.AsymViewHolder
 import java.lang.ref.WeakReference
 import java.util.*
 
